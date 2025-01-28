@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>InstaClone</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Add Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-storage-compat.js"></script>
+</head>
+<body>
+  <div id="auth-section">
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="signUp()">Sign Up</button>
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div id="app" style="display: none;">
+    <input type="file" id="imageUpload" accept="image/*">
+    <button onclick="uploadPost()">Post</button>
+    <div id="feed"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+ *My favorite app::html+css+js  https://itunes.apple.com/app/id908054939?mt=8
+Other's Tutorals:http://iii9i.com
